@@ -4,13 +4,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">主页</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-07-03T19:40:10&#43;08:00</updated>
-    <id>http://.github.io/</id>
-    <link rel="alternate" type="text/html" href="http://.github.io/" />
-    <link rel="self" type="application/atom&#43;xml" href="http://.github.io/atom.xml" />
+    <updated>2020-07-03T19:42:00&#43;08:00</updated>
+    <id>http://nostalgiaaa.github.io/</id>
+    <link rel="alternate" type="text/html" href="http://nostalgiaaa.github.io/" />
+    <link rel="self" type="application/atom&#43;xml" href="http://nostalgiaaa.github.io/atom.xml" />
     <author>
             <name>Nostalgia</name>
-            <uri>http://.github.io/</uri>
+            <uri>http://nostalgiaaa.github.io/</uri>
             
                 <email>844255371@qq.com</email>
             </author>
@@ -18,13 +18,13 @@
     <generator uri="https://gohugo.io/" version="0.70.0">Hugo</generator>
         <entry>
             <title type="text">Golang时区/mysql时间默认值问题问题</title>
-            <link rel="alternate" type="text/html" href="http://.github.io/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/" />
-            <id>http://.github.io/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+            <link rel="alternate" type="text/html" href="http://nostalgiaaa.github.io/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/" />
+            <id>http://nostalgiaaa.github.io/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/</id>
             <updated>2020-07-03T19:31:13&#43;08:00</updated>
             <published>2020-06-15T20:14:58&#43;08:00</published>
             <author>
                     <name>Nostalgia</name>
-                    <uri>http://.github.io/</uri>
+                    <uri>http://nostalgiaaa.github.io/</uri>
                     <email>844255371@qq.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">环境： go：1.14 gorm mysql 最近在工作中使用 golang 时遇到了几个问题，具体如下： 数据库中有一个……

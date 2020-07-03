@@ -8,7 +8,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>主页</title>
-        <link>http://.github.io/</link>
+        <link>http://nostalgiaaa.github.io/</link>
         <description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description>
         <generator>Hugo 0.70.0 https://gohugo.io/</generator>
         
@@ -23,15 +23,15 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Fri, 03 Jul 2020 19:40:10 &#43;0800</lastBuildDate>
+        <lastBuildDate>Fri, 03 Jul 2020 19:42:00 &#43;0800</lastBuildDate>
         
-            <atom:link rel="self" type="application/rss&#43;xml" href="http://.github.io/rss.xml" />
+            <atom:link rel="self" type="application/rss&#43;xml" href="http://nostalgiaaa.github.io/rss.xml" />
         
         
             <item>
                 <title>Golang时区/mysql时间默认值问题问题</title>
-                <link>http://.github.io/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/</link>
-                <guid isPermaLink="true">http://.github.io/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+                <link>http://nostalgiaaa.github.io/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+                <guid isPermaLink="true">http://nostalgiaaa.github.io/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
                 <pubDate>Mon, 15 Jun 2020 20:14:58 &#43;0800</pubDate>
                 
                     <author>844255371@qq.com (Nostalgia)</author>
