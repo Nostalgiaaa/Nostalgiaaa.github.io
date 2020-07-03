@@ -3,15 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://coderzh.github.io/categories/</loc>
+    <loc>http://.github.io/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2020-07-03T19:31:13+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://coderzh.github.io/tags/</loc>
+    <loc>http://.github.io/posts/</loc>
+    <lastmod>2020-07-03T19:31:13+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://coderzh.github.io/</loc>
+    <loc>http://.github.io/</loc>
+    <lastmod>2020-07-03T19:31:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://.github.io/tags/</loc>
   </url>
   
 </urlset>
