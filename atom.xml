@@ -4,27 +4,144 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">主页</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-07-03T19:42:00&#43;08:00</updated>
-    <id>http://nostalgiaaa.github.io/</id>
-    <link rel="alternate" type="text/html" href="http://nostalgiaaa.github.io/" />
-    <link rel="self" type="application/atom&#43;xml" href="http://nostalgiaaa.github.io/atom.xml" />
+    <updated>2020-07-30T19:54:02&#43;08:00</updated>
+    <id>https://example.com/</id>
+    <link rel="alternate" type="text/html" href="https://example.com/" />
+    <link rel="self" type="application/atom&#43;xml" href="https://example.com/atom.xml" />
     <author>
             <name>Nostalgia</name>
-            <uri>http://nostalgiaaa.github.io/</uri>
+            <uri>https://example.com/</uri>
             
                 <email>844255371@qq.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.70.0">Hugo</generator>
         <entry>
+            <title type="text">Spam系统瞎想</title>
+            <link rel="alternate" type="text/html" href="https://example.com/posts/spam%E7%B3%BB%E7%BB%9F%E7%9E%8E%E6%83%B3/" />
+            <id>https://example.com/posts/spam%E7%B3%BB%E7%BB%9F%E7%9E%8E%E6%83%B3/</id>
+            <updated>2020-07-30T19:53:27&#43;08:00</updated>
+            <published>2020-07-30T18:43:41&#43;08:00</published>
+            <author>
+                    <name>Nostalgia</name>
+                    <uri>https://example.com/</uri>
+                    <email>844255371@qq.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">最近公司要重构spam系统，同事起的表名和变量名很脱戏。例如 proof judgement 让我联想到了警察/法……
+    
+    </summary>
+            
+                <content type="html">&lt;p&gt;最近公司要重构spam系统，同事起的表名和变量名很脱戏。例如&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;proof&lt;/li&gt;
+&lt;li&gt;judgement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;让我联想到了警察/法院/监狱这套体系。简单一想。这套模型对应 spam 还挺合适的，抽象无处不在。&lt;/p&gt;
+&lt;h2 id=&#34;是否有罪&#34;&gt;是否有罪&lt;/h2&gt;
+&lt;p&gt;首先是否有罪有两种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有罪推定&lt;/li&gt;
+&lt;li&gt;无罪推定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有罪推定：用户产生的一切内容就是有罪的，除非有明确证据证明清白&lt;/p&gt;
+&lt;p&gt;无罪推定：用户产生的内容就是好的，除非有明确证据证明该spam&lt;/p&gt;
+&lt;p&gt;两种推定利弊需要通过实际情况来判断，有罪推定 spam 出现在公共区域的几率小，但是人工审核工作量增加，有一定几率冤假错案。无罪推定人工审核量会小一些，但是遇到大规模作案容易有漏网之鱼。&lt;/p&gt;
+&lt;h2 id=&#34;组织结构&#34;&gt;组织结构&lt;/h2&gt;
+&lt;p&gt;法院要独立于警察监狱体系，也就是要隔离开来。民警抓的犯人可以在法院审判，缉毒警察抓的犯人也可以在法院审判。&lt;/p&gt;
+&lt;p&gt;监狱警察是同一套体系，警察负责把嫌疑人（用户生产内容）送到法院，此时根据有罪/无罪推定，让用户生产内容自由流通还是暂时被拘留候审。等到法院审判完成再由警察操作是释放还是投入监狱（封禁）&lt;/p&gt;
+&lt;h2 id=&#34;具体架构&#34;&gt;具体架构&lt;/h2&gt;
+&lt;p&gt;法院可以是一套单独的服务&lt;/p&gt;
+&lt;p&gt;可以有如下功能：&lt;/p&gt;
+&lt;h4 id=&#34;接受犯罪嫌疑人&#34;&gt;接受犯罪嫌疑人&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt; 接口接收如下信息 ：
+ 嫌疑人唯一凭证（用户内容全局唯一id）
+ 嫌疑人类型（不同的系统不同的类型）
+ 嫌疑人作案现场（用户生产的文本/图片/视频/用户行为）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;审判犯罪嫌疑人&#34;&gt;审判犯罪嫌疑人&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt; 根据不同的嫌疑人类型可以选择不同的法官或者陪审团
+ 陪审团（分类器，可以有第三方，或者算法根据业务特点所编写的）
+ 法官（审核人员）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;审判记录&#34;&gt;审判记录&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt; 记录所有陪审团/法官操作（记录分类器结果，审核人员操作）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;通知警察&#34;&gt;通知警察&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt; 把审判结果通知警察（回调方式通知、或者警察轮询法院）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;审判结果记录&#34;&gt;审判结果记录&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt; 记录所有的审判结果
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;警察、监狱系统有如下功能&lt;/p&gt;
+&lt;h4 id=&#34;押送嫌疑人&#34;&gt;押送嫌疑人&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt; 把嫌疑人包装好送到法院
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;获取审判结果&#34;&gt;获取审判结果&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt; 轮询法院或者开通回调
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;送监&#34;&gt;送监&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt; 根据审判结果放行或者屏蔽掉嫌疑人
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;实现&#34;&gt;实现&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;各个业务系统实现包装用户生产信息。&lt;/li&gt;
+&lt;li&gt;把用户信息发送到法院（spam系统）。&lt;/li&gt;
+&lt;li&gt;法院（spam系统）收到用户生产信息，根据用户类型选择不同的分类器，不同的审核人员。&lt;/li&gt;
+&lt;li&gt;分类器把结果记录在审判记录里，审核人员通过后台读取所有待审核信息给出结果也写在审判记录里。&lt;/li&gt;
+&lt;li&gt;从审判记录中读取所有没交还业务系统处理的记录。根据业务自定义的规则，比如分类器50%给出封禁就直接封禁，审核人员有一票否决权等等。&lt;/li&gt;
+&lt;li&gt;把最后审判记录通过回调返还给业务系统&lt;/li&gt;
+&lt;li&gt;如果有误判，可以通过查询审判结果记录来让业务系统重新放行或者屏蔽。&lt;/li&gt;
+&lt;li&gt;业务系统收到审判结果，自行封禁或者放行。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;好处&#34;&gt;好处&lt;/h2&gt;
+&lt;p&gt;法院只用负责分类器，人工审核部分，新增分类器或者人工审核规则都是业务系统不关心的，跟业务系统解耦开。&lt;/p&gt;
+&lt;p&gt;所有不同的用户内容只要编写好发送接口，回调以及lock/unlock 方法就可以接入spam系统。&lt;/p&gt;
+&lt;p&gt;有新业务线介入时，如果跟老业务内容类似，可以直接套用分类器规则。多个业务线可以共用一套审核团队。减少开发量，人力成本。&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/categories/%E6%8A%80%E6%9C%AF/" term="技术" label="技术" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/spam/" term="spam" label="spam" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/%E6%9E%B6%E6%9E%84/" term="架构" label="架构" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">Golang时区/mysql时间默认值问题问题</title>
-            <link rel="alternate" type="text/html" href="http://nostalgiaaa.github.io/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/" />
-            <id>http://nostalgiaaa.github.io/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/</id>
-            <updated>2020-07-03T19:31:13&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://example.com/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/" />
+            <id>https://example.com/posts/golang%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8Agorm%E6%97%B6%E9%97%B4%E9%BB%98%E8%AE%A4%E5%80%BC%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+            <updated>2020-07-30T19:53:27&#43;08:00</updated>
             <published>2020-06-15T20:14:58&#43;08:00</published>
             <author>
                     <name>Nostalgia</name>
-                    <uri>http://nostalgiaaa.github.io/</uri>
+                    <uri>https://example.com/</uri>
                     <email>844255371@qq.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">环境： go：1.14 gorm mysql 最近在工作中使用 golang 时遇到了几个问题，具体如下： 数据库中有一个……
@@ -249,7 +366,29 @@ golang 还允许你&lt;/p&gt;
             
                 
                     
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/categories/%E6%8A%80%E6%9C%AF/" term="技术" label="技术" />
+                            
+                        
+                    
                 
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/golang/" term="golang" label="golang" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/gorm/" term="gorm" label="gorm" />
+                            
+                        
                     
                 
             
